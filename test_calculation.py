@@ -2,7 +2,7 @@ import pytest
 from calculation import Circle
 import math
 
-@pytest.mark.parametrize("radius, expected_area", [(1, 1 * math.pi), (2, 4 * math.pi), (5, 25 * math.pi), (15, 2205 * math.pi)])
+@pytest.mark.parametrize("radius, expected_area", [(1, 1 * math.pi), (2, 4 * math.pi), (5, 25 * math.pi), (15, 225 * math.pi)])
 def test_area(radius, expected_area):
     #instance creation
     circle = Circle(radius)
